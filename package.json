@@ -1,0 +1,41 @@
+{
+    "name": "vera",
+    "icon": "images/icon.png",
+    "displayName": "Vera Homebrew Computer",
+    "description": "Provides language support for the Vera homebrew computer.",
+    "version": "0.0.1",
+    "publisher": "bcrist",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bcrist/vscode-vera"
+    },
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "vera-asm",
+                "aliases": [
+                    "Vera Assembly"
+                ],
+                "extensions": [
+                    ".asm",
+                    ".vasm"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "vera-asm",
+                "scopeName": "source.vera-asm",
+                "path": "./syntaxes/vera-asm.tmLanguage.json"
+            }
+        ]
+    }
+}
